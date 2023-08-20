@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which month has 28 days?",
+    "answer": "All of them",
+    "level": "3"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "answer": "Mars",
+    "level": "1"
+  },
+  {
+    "question": "How many years are there in the century?",
+    "answer": "1000",
+    "level": "4"
+  },
+  {
+    "question": "How many string does a violin have?",
+    "answer": "4",
+    "level": "3"
+  },
+  {
+    "question": "What goes through towns and over hills but never moves?",
+    "answer": "A road",
+    "level": "2"
+  },
+  {
+    "question": "This travels around the world but stays in one spot? What is it?",
+    "answer": "A stamp",
+    "level": "3"
+  },
+  {
+    "question": "During which month do people sleep the least?",
+    "answer": "February",
+    "level": "3"
+  },
+  {
+    "question": "If you threw a white stone into the Red Sea, what would it become?",
+    "answer": "Wet",
+    "level": "5"
+  },
+  {
+    "question": "Mary’s father has five daughters – Nana, Nene, Nini, Nono. What is the fifth daughter’s name?",
+    "answer": "Mary",
+    "level": "5"
+  },
+  {
+    "question": "If I have it, I do not share it. If I share it, I don’t have it. What is it?",
+    "answer": "A secret",
+    "level": "5"
+  }
+]
