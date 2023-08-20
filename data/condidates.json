@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Николай Анашкин",
+    "picture": "https://цветыкурск.рф/wp-content/uploads/2020/12/2894115461.jpg",
+    "position": "Прокурор",
+    "gender": "Мужчина",
+    "age": "35",
+    "skills": "магия, вязание, литература и чтение, квиллинг, садоводство"
+  },
+  {
+    "id": "2",
+    "name": "Василий Валадес",
+    "picture": "https://salonfifi.ru/wp-content/uploads/1/f/e/1fe7933834681d6ffead841acb0da368.jpeg",
+    "position": "Депутат",
+    "gender": "Мужчина",
+    "age": "31",
+    "skills": "машины, заводить новые знакомства, видение личного дневника, география, фотоколлаж"
+  },
+  {
+    "id": "3",
+    "name": "Василиса Онегина",
+    "picture": "https://fartune.ru/wp-content/uploads/2019/07/1032971.jpg",
+    "position": "Врач",
+    "gender": "Женщина",
+    "age": "27",
+    "skills": "программирование, шитье, тусы с друзьями, постройка из лего и других конструктов, постройка песочных замков"
+  },
+  {
+    "id": "4",
+    "name": "Юрия Попова",
+    "picture": "http://st21.styapokupayu.ru/images/og_image/000/247/898_original.jpg",
+    "position": "Владелец Компании",
+    "gender": "Женщина",
+    "age": "29",
+    "skills": "хоккей, мультфильмы, очень много спать, газеты, рисование"
+  },
+  {
+    "id": "5",
+    "name": "Николас Макарченко",
+    "picture": "https://img.mensxp.com/media/content/2022/Nov/Happy-man-1_637f1c66bd2ab.jpeg",
+    "position": "Программист",
+    "gender": "Мужчина",
+    "age": "32",
+    "skills": "видеоигры, программирование, гадание, вязание, цветоводство, заводить новые знакомства"
+  },
+  {
+    "id": "6",
+    "name": "Алина Маркова",
+    "picture": "http://sevastopolfm.ru/wp-content/uploads/2020/01/4478.jpg",
+    "position": "Программист",
+    "gender": "Женщина",
+    "age": "29",
+    "skills": "уход за животные, ведение соц. сетей, видеоигры аппликации, трэвелбукинг, астрономия"
+  },
+  {
+    "id": "7",
+    "name": "Анатолий Брянцев",
+    "picture": "https://snobium.com/wp-content/uploads/2016/07/borba-s-depressiej-luchshij-antidepressant-lechenie-bez-lekarstv.jpg",
+    "position": "Повар",
+    "gender": "Мужчина",
+    "age": "25",
+    "skills": "математика, программирование, конструирование, плаванье в бассейнах, квиллинг, боевые искусства"
+  }
+]
