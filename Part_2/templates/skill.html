@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Candidates_by_skills</title>
 </head>
 <body>
 <h1>Найдено с навыком {{skill}}: {{number_of_candidates}}</h1>
-{% for candidate in candidates %}
-<p>Кандидат: <a href="/candidate/{{candidate.get('id')}}">{{candidate.get('name')}}</a></p>
-{% endfor %}
+{% if number_of_candidates > 0  %}
+    {% for candidate in candidates %}
+        <p>Кандидат: <a href="/candidate/{{candidate.id}}">{{candidate.name}}</a></p>
+    {% endfor %}
+{% else %}
+    <p>Отсутствуют!</p>
+{% endif %}
 </body>
 </html>

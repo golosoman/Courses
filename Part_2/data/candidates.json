@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "Adela Hendricks",
     "picture": "https://fartune.ru/wp-content/uploads/2019/07/1032971.jpg",
     "position": "Go разработчик",
@@ -9,7 +9,7 @@
     "skills": "go, python"
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Sheree Torres",
     "picture": "http://st21.styapokupayu.ru/images/og_image/000/247/898_original.jpg",
     "position": "Delphi developer",
@@ -18,7 +18,7 @@
     "skills": "Delphi, pascal, fortran, basic"
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Burt Stein",
     "picture": "https://цветыкурск.рф/wp-content/uploads/2020/12/2894115461.jpg",
     "position": "Team lead",
@@ -27,7 +27,7 @@
     "skills": "делегирование, пользоваться календарем, обсуждать важные вопросы"
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "Bauer Adkins",
     "picture": "https://salonfifi.ru/wp-content/uploads/1/f/e/1fe7933834681d6ffead841acb0da368.jpeg",
     "position": "CTO",
@@ -36,16 +36,16 @@
     "skills": "very important face"
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "Day Holloway",
-    "picture": "https://img.mensxp.com/media/content/2022/Nov/Happy-man-1_637f1c66bd2ab.jpeg",
+    "picture": "https://storge.pic2.me/upload/423/5b6497c144419.jpg",
     "position": "HR manager",
     "gender": "male",
     "age": 35,
     "skills": "LinkedIn, telegram, spam, spam, spam"
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "Austin Cochran",
     "picture": "https://snobium.com/wp-content/uploads/2016/07/borba-s-depressiej-luchshij-antidepressant-lechenie-bez-lekarstv.jpg",
     "position": "python-develop",
@@ -54,7 +54,7 @@
     "skills": "python, html"
   },
   {
-    "id": "7",
+    "id": 7,
     "name": "Sheree Love",
     "picture": "http://sevastopolfm.ru/wp-content/uploads/2020/01/4478.jpg",
     "position": "Django developer",

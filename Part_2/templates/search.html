@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Candidates_by_name</title>
 </head>
 <body>
-<h1>Найдено кандидатов {{number_of_candidates}}</h1>
-{% for candidate in candidates %}
-    <p><a href="/candidate/{{candidate.get('id')}}">{{candidate.get('name')}}</a></p>
-{% endfor %}
+<h1>Найдено кандидатов: {{number_of_candidates}}</h1>
+{% if number_of_candidates > 0 %}
+    {% for candidate in candidates %}
+        <p><a href="/candidate/{{candidate.id}}">{{candidate.name}}</a></p>
+    {% endfor %}
+{% else %}
+    <p>Отсутствуют!</p>
+{% endif %}
 </body>
 </html>
