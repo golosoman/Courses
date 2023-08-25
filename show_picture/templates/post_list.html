@@ -12,9 +12,9 @@
     {% for post in posts_list %}
     <div class="post">
         {% if post.1%}
-            <img src="../{{post.0.pic}}" alt="Картинка поста">
+        <img src="../{{post.0.pic}}" alt="Картинка поста">
         {% else %}
-            <img src="{{post.0.pic}}" alt="Картинка поста">
+        <img src="{{post.0.pic}}" alt="Картинка поста">
         {% endif %}
         <p>Описание поста: {{post.0.content}}</p>
     </div>
