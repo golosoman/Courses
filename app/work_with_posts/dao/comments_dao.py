@@ -36,16 +36,30 @@ class CommentsDAO:
         except JSONDecodeError:
             raise JSONDecodeError(msg="Не удается преобразовать JSON в список", doc=f"{self.file_path}", pos=1)
 
-    def get_comments_all(self):
+    def get_comments_all(self) -> List[Dict[str, str | int | Dict]]:
+        """
+        Метод получения комментариев из БД
+        :return: комментарии
+        """
+
         user_comments = self.load_data_from_file()
+
         return user_comments
 
-    def get_comments_by_post_id(self, post_id: int, path: str):
+    def get_comments_by_post_id(self, post_id: int, path: str) -> List[Dict[str, str | int | Dict]]:
+        """
+        Метод получения комментариев к посту по его id
+        :param post_id: идентификатор поста
+        :param path: путь к базе данных с постами
+        :return: возвращает комментарии к определенному посту или выбрасывает ошибку ValueError
+        """
         posts_data = PostsDAO(path)
+
         if not posts_data.post_exist_by_id(post_id):
             raise ValueError("Такого поста не существует")
 
         comments = self.get_comments_all()
+
         post_comments = list()
 
         for comment in comments:
