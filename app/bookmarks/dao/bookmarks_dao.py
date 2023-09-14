@@ -56,7 +56,7 @@ class BookmarksDAO:
 
         self.load_data_to_file(result)
 
-    def load_data_to_file(self, result: List[Dict[str: int]]):
+    def load_data_to_file(self, result: List[Dict[str, int]]):
         """
         Метод загрузки данных в файл
         :param result:
