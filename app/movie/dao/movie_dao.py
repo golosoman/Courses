@@ -162,3 +162,38 @@ class MovieDAO:
         else:
             raise ValueError("Нет данных в базе!")
 
+    def find_actors_which_play_with_two_actors(self, first_actor: str, second_actor: str) -> List[str]:
+        """
+        Метод поиска актеров, которые играют с двумя определенными актерами больше двух раз
+        :param first_actor: первый актер
+        :param second_actor: второй актер
+        :return: возвращает список актеров, которые играют вместе с двумя другими
+        """
+
+        # Запрос к базе данных, получаем данные про фильмы по именам актеров, которые в них участвуют
+        sqlite_query = f"""
+        SELECT title, "cast" AS actor, description
+        FROM netflix
+        WHERE actor LIKE "%{first_actor}%"
+        AND actor LIKE "%{second_actor}%"
+        """
+
+        films = self.database_connect(sqlite_query)
+
+        # Находим всех актеров, которые участвую в фильмах (могут повторяться)
+        actors = list()
+        for film in films:
+            actors.extend(film[1].split(", "))
+
+        # Пробегаемся по списку актеров, если актер не является актером из данных выше и
+        # если актер встречается в списке > 2 раз, то добавляем его в результирующий список
+        result = list()
+        for actor in actors:
+            if actor not in [first_actor, second_actor]:
+                if actors.count(actor) > 2:
+                    result.append(actor)
+
+        # Делаем список множеством - уникализируем актеров
+        result = set(result)
+
+        return list(result)
