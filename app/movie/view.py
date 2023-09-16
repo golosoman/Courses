@@ -33,7 +33,14 @@ def movie_by_genre_page(genre_value):
     movies = movies_dao.find_films_by_genre(genre_value)
     return jsonify(movies)
 
+# Функция загрузки страницы с именами актеров, которые играли картины вместе first_actor и second_actor
 @movie_blueprint.route("/actor/<first_actor>/to/<second_actor>")
-def list_actor_who_work_together_more_two(first_actor, second_actor):
+def list_actor_who_work_together_more_two_page(first_actor, second_actor):
     actors = ", ".join(movies_dao.find_actors_which_play_with_two_actors(first_actor, second_actor))
     return f"<h1>Список всех актеров которые играю вместе с {first_actor} и {second_actor}</h1><br><p>{actors}</p>"
+
+# Функция загрузки страницы c json по определенному типу, дате и жанру
+@movie_blueprint.route("/movie/<type_movie>/<release_year>/<genre>")
+def movie_by_type_year_genre_page(type_movie, release_year, genre):
+    movies = movies_dao.find_movies_by_type_year_and_genre(type_movie, release_year, genre)
+    return jsonify(movies)
