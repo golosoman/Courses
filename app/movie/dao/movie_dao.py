@@ -151,6 +151,8 @@ class MovieDAO:
         """
 
         films = self.database_connect(sqlite_query)
+
+        # Проверка на возвращаемы пустой список
         if len(films) != 0:
             json_data = list()
             for film in films:
@@ -197,3 +199,36 @@ class MovieDAO:
         result = set(result)
 
         return list(result)
+
+    def find_movies_by_type_year_and_genre(self, type_movie: str, release_year: int, genre: str) -> List[Dict[str, str]]:
+        """
+        Метод нахождения кино по типу, году и жанру
+        :param type_movie: тип кино
+        :param release_year: год релиза
+        :param genre: жанр
+        :return: возвращает список словарей с атрибутами: title, description, либо же выбрасывает ошибку ValueError
+        """
+
+        # Запрос к базе данных, получаем данные про фильмы по типу, дате и жанру
+        sqlite_query = f"""
+        SELECT title, description
+        FROM netflix
+        WHERE type = "{type_movie}"
+        AND release_year = "{release_year}"
+        AND listed_in LIKE "%{genre}%"
+        LIMIT 100
+        """
+
+        films = self.database_connect(sqlite_query)
+
+        # Проверка на возвращаемы пустой список
+        if len(films) != 0:
+            json_data = list()
+            for film in films:
+                json_data.append({
+                    "title": film[0],
+                    "description": film[1].strip(),
+                })
+            return json_data
+        else:
+            raise ValueError("Нет данных в базе!")
