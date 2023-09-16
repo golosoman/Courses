@@ -12,6 +12,8 @@ app.config.from_pyfile(CONFIG_PATH)
 
 # Регистрация булпринтов
 app.register_blueprint(movie_blueprint)
+
+# Добавление пару настроек в веб-приложений
 app.config['JSON_AS_ASCII'] = False
 app.config['DEBUG'] = True
 
