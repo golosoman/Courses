@@ -32,3 +32,8 @@ def movie_by_rating_page(value_rating):
 def movie_by_genre_page(genre_value):
     movies = movies_dao.find_films_by_genre(genre_value)
     return jsonify(movies)
+
+@movie_blueprint.route("/actor/<first_actor>/to/<second_actor>")
+def list_actor_who_work_together_more_two(first_actor, second_actor):
+    actors = ", ".join(movies_dao.find_actors_which_play_with_two_actors(first_actor, second_actor))
+    return f"<h1>Список всех актеров которые играю вместе с {first_actor} и {second_actor}</h1><br><p>{actors}</p>"
