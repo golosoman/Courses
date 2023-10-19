@@ -8,6 +8,7 @@ animals_dao = ItemsDAO(ANIMAL_DB_PATH)
 # Создание блупринта для прохода по маршруту movies
 animals_blueprint = Blueprint("animals_blueprint", __name__, template_folder="templates")
 
+
 # Функция загрузки страницы c json по id животного
 @animals_blueprint.route("/animals/<id>")
 def animal_page_by_id(id):

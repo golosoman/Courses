@@ -21,7 +21,7 @@ class ItemsDAO:
         """
         return f"Загрузчик Баз Данных по пути: {self.file_path} - {os.path.exists(self.file_path)}"
 
-    def database_connect(self, query: str)-> List[Tuple[str | int]]:
+    def database_connect(self, query: str) -> List[Tuple[str | int]]:
         """
         Метод подключения к базе данных по запросу query
         :param query: запрос к БД
