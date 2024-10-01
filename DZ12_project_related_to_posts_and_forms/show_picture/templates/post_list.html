@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Все посты найденные по запросу {{key_post}}</title>
+    <link rel="stylesheet" href="../../static/style.css">
+</head>
+<body>
+<main>
+    <p><a href="/" class="link">Назад</a></p><br>
+    <h1>Посты по запросу: {{key_post}}</h1>
+    {% for post in posts_list %}
+    <div class="post">
+        {% if post.1%}
+        <img src="../{{post.0.pic}}" alt="Картинка поста">
+        {% else %}
+        <img src="{{post.0.pic}}" alt="Картинка поста">
+        {% endif %}
+        <p>Описание поста: {{post.0.content}}</p>
+    </div>
+    <hr>
+    {% endfor %}
+    <a href="/post/add_post/" class="button">Добавить пост</a>
+</main>
+</body>
+</html>
