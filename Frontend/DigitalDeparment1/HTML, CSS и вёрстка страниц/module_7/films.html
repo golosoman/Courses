@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Лабораторная работа 7</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="extensions/group-by-v2/bootstrap-table-group-by.css">
+<script src="extensions/group-by-v2/bootstrap-table-group-by.js"></script>
+        <style>
+            .option_img_for_info{
+                width: 250px;
+                height: 250px;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-light">
+
+        <div class="menu sticky-top pb-3">
+            <div class="top_menu">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-tem">
+                                <a class="nav-link navbar-brand" href="./info.html">Главная</a>
+                            </li>
+                            <li class="nav-tem">
+                                <a class="nav-link navbar-brand active" href="films.html">фильмы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissible fade show fixed-top mt=5">
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+            >
+            </button>
+            <strong>Информация!</strong> Этот раздел теперь доступен.
+       </div>
+       <div class="container-fluid mt-5">
+            <div class="row">
+                    <div class="col-md-6">
+                        <h1>Киану Чарльз Ривз</h1>
+                        <h2>Основная информация:</h2>
+                        <ul>
+                            <li>дата рождения: 2 сентября 1964;</li>
+                            <li>количество полных лет: 59;</li>
+                            <li>он снялся более чем 76 фильмах, 4 сериалах, 
+                                озвучил 7 мультфильмов, был режиссером 1 кинокартины;</li>
+                            <li>жанры фильмов, в которых снимался: научная фантастика, 
+                                боевик, драма, комедия, триллер, криминал, мелодрама, фэнтези.</li>
+                        </ul>
+                </div>
+                <div class="col">
+                    <img src="./static/pictures/Kianu_7.jpg" alt="Киану Ривз" class="img-fluid  mx-auto d-block py-3">
+                </div>
+            </div>
+       </div>
+
+       <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h1>Лучшие фильмы</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_JW.jpeg" class="d-block option_img_for_card rounded" alt="Джон Уик">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Джон Уик 4 (2023)</h5>
+                            <p>
+                                Чтобы обрести свободу, киллер-изгой бросает вызов Правлению кланов. 
+                                Самая зрелищная часть стильной экшен-саги.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/1267348/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_Konstantin.jpg" class="d-block option_img_for_card rounded" alt="Константин">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Константин: Повелитель тьмы (2005)</h5>
+                            <p>
+                                Умирающий от рака экзорцист защищает людей от демонов.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/3793/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_matrix.jpg" class="d-block option_img_for_card rounded" alt="Матрица">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Матрица (1999)</h5>
+                            <p>
+                                Хакер Нео узнает, что его мир — виртуальный. Выдающийся экшен, доказавший, что зрелищное кино может быть умным.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/301/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_Vudstock.jpg" class="d-block option_img_for_card rounded" alt="Музыкальная шкатулка">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Музыкальная шкатулка. Вудсток 99: Мир, любовь и ярость (2021)</h5>
+                            <p>
+                                «Вудсток» охватывает бесконтрольное насилие и хаос. Док о трагических событиях 1999 года глазами очевидцев.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/4514070/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_advok_diavol.jpg" class="d-block option_img_for_card rounded" alt="Адвокат дьявола">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Адвокат дьявола (1997)</h5>
+                            <p>
+                                Честолюбивый юрист, который защищает негодяев, получает выгодное предложение. Триллер об истинной сути зла.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/3797/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_drakula.jpg" class="d-block option_img_for_card rounded" alt="Дракула">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Дракула (1992)</h5>
+                            <p>
+                                Граф Дракула приезжает в Лондон соблазнить невесту своего юриста. Будоражащая экранизация романа Брэма Стокера.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/1727/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_na_grebne.jpg" class="d-block option_img_for_card rounded" alt="На гребне волны">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>На гребне волны фильм (1991)</h5>
+                            <p>
+                                Агент ФБР внедряется в банду серфингистов-грабителей. Боевик с молодым Киану Ривзом, наполненный духом свободы.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/1990/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                    <div class="card content_card_contend">
+                        <img src="./static/pictures/film_dom_u_ozera.jpg" class="d-block option_img_for_card rounded" alt="Дом у озера">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5>Дом у озера (2006)</h5>
+                            <p>
+                                Мелодрама, которая заставит рыдать и самого прожженного циника.
+                            </p>
+                            <a href="https://www.kinopoisk.ru/film/102130/" class="btn btn-dark mt-auto align-self-start">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+        <div class="container mt-3">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h1>Дополнительная информация об актере</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Награды и кинопремии</h2>
+                    <p>Киану Чарльз Ривз имеет множество наград и премий, 
+                        включая награду MTV Movie Award за лучшую драку в фильме “Матрица”, 
+                        награду Blockbuster Entertainment Awards за лучший актерский дебют в фильме “Дракула”, 
+                        награду Teen Choice Awards за лучшую мужскую роль в фильме “Матрица” и многие другие.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2>Любимые блюда</h2>
+                    <p>Согласно информации из интернета, Киану Чарльз Ривз предпочитает простую пищу, 
+                        такую как овощи, фрукты, орехи и семена. Он также любит готовить и экспериментировать 
+                        с новыми рецептами.
+                    </p>
+                    <p>Кроме того, Киану Чарльз Ривз любит готовить блюда японской и тайской кухни. 
+                        Он также увлекается выпечкой и часто экспериментирует с новыми рецептами тортов и пирожных.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2>Интересные факты</h2>
+                    <ul>
+                        <li>Он начал свою карьеру в кино в возрасте 15 лет, снявшись в нескольких телесериалах.</li>
+                        <li>Ривз является большим поклонником видеоигр и часто играет в них со своими друзьями.</li>
+                        <li>Ривз - большой любитель мотоциклов и имеет в своей коллекции несколько дорогих моделей.</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-xl-block d-lg-block d-md-block">
+                    <h2>Смешная картинка</h2>
+                    <img src="./static/pictures/Kianu_8.jpg" alt="Киану Ривз" class="d-block rounded option_img_for_info">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-4">
+            <h1>Фильмография</h1>
+            <table id="table" class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col" >Год</th>
+                        <th scope="col" >Руссое название</th>
+                        <th scope="col" >Оригинальное название</th>
+                        <th scope="col" >Роль</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1986</td>
+                        <td>Молодая кровь</td>
+                        <td>Youngblood</td>
+                        <td>Крис Эрскин</td>
+                    </tr>
+                    <tr>
+                        <td>1988</td>
+                        <td>Бум вокруг младенца</td>
+                        <td>Baby Boom</td>
+                        <td>Бик</td>
+                    </tr>
+                    <tr>
+                        <td>1990</td>
+                        <td>На гребне волны</td>
+                        <td>Point Break</td>
+                        <td>Джонни Юта</td>
+                    </tr>
+                    <tr>
+                        <td>1992</td>
+                        <td>Дракула</td>
+                        <td>Dracula</td>
+                        <td>Джонатан Харкер</td>
+                    </tr>
+                    <tr>
+                        <td>1994</td>
+                        <td>Скорость</td>
+                        <td>Speed</td>
+                        <td>Джек Травен</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>Адвокат дьявола</td>
+                        <td>The Devil’s Advocate</td>
+                        <td>Кевин Ломакс</td>
+                    </tr>
+                    <tr>
+                        <td>1999</td>
+                        <td>Матрица</td>
+                        <td>The Matrix</td>
+                        <td>Нео</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>Матрица: Перезагрузка</td>
+                        <td>The Matrix Reloaded</td>
+                        <td>Нео</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>Константин: Повелитель тьмы</td>
+                        <td>Konstantin: The Lord of Darkness</td>
+                        <td>Джон Константин</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>Джон Уик</td>
+                        <td>John Wick</td>
+                        <td>Джонатан Уик</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Джон Уик 4</td>
+                        <td>John Wick 4</td>
+                        <td>Джонатан Уик</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

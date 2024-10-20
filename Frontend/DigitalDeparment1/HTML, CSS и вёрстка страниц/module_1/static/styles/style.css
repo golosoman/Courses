@@ -1,0 +1,23 @@
+body{
+    font-family: 'Arial';
+	font-size: 18px;
+	color: #000;
+	background: #fff
+}
+
+.content{
+    margin: auto;
+}
+
+.content-left{
+    background: color(srgb red green blue);
+}
+
+.content-right{
+    background: color(srgb red green blue);
+}
+
+img{
+    width: 300;
+    height: 300
+}

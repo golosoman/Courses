@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Вторая страница</title>
+        <link href="./static/styles/style.css" rel="stylesheet">
+        <link href="./static/styles/table.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <a href="page_1.html" class="header_element">Основная страница </a>
+            <a href="page_2.html" class="header_element">Позиционирование элементов </a>
+            <a href="table.html" class="header_element">Таблица </a>
+        </div>
+        <div class="content_table">
+            <table class="student_db_table">
+                <caption>Данные о студентах</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>ФИО студента</th>
+                        <th>номер зачетной книжки</th>
+                        <th>номер группы</th>
+                        <th>пол</th>
+                        <th>Интересы</th>
+                        <th>возраст</th>
+                        <th>форма поступления</th>
+                        <th>название направления</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Овчинникова Александра Никитична</td>
+                        <td>388616</td>
+                        <td>7302</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>20</td>
+                        <td>очно</td>
+                        <td>Контролер банка</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Юдина Эвелина Михайловна</td>
+                        <td>445504</td>
+                        <td>7302</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>19</td>
+                        <td>очно</td>
+                        <td>Контролер банка</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Сергеев Марк Даниилович</td>
+                        <td>117715</td>
+                        <td>7302</td>
+                        <td>м</td>
+                        <td>Настольные игры</td>
+                        <td>20</td>
+                        <td>очно</td>
+                        <td>Контролер банка</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Кузнецова Дарья Кирилловна</td>
+                        <td>434500</td>
+                        <td>7302</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>20</td>
+                        <td>очно</td>
+                        <td>Контролер банка</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Бирюкова Елизавета Никитична</td>
+                        <td>744877</td>
+                        <td>5404</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>21</td>
+                        <td>заочно</td>
+                        <td>Веб-мастер</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Егорова Карина Львовна</td>
+                        <td>744877</td>
+                        <td>5404</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>22</td>
+                        <td>заочно</td>
+                        <td>Веб-мастер</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Цветкова София Гордеевна</td>
+                        <td>744877</td>
+                        <td>5404</td>
+                        <td>ж</td>
+                        <td>Настольные игры</td>
+                        <td>21</td>
+                        <td>заочно</td>
+                        <td>Веб-мастер</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Ильинский Степан Родионович</td>
+                        <td>744877</td>
+                        <td>5404</td>
+                        <td>м</td>
+                        <td>Настольные игры</td>
+                        <td>23</td>
+                        <td>заочно</td>
+                        <td>Веб-мастер</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Соловьев Михаил Миронович</td>
+                        <td>262860</td>
+                        <td>7102</td>
+                        <td>м</td>
+                        <td>Настольные игры</td>
+                        <td>18</td>
+                        <td>очно</td>
+                        <td>Бизнес-аналитик</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Тарасов Александр Дмитриевич</td>
+                        <td>262860</td>
+                        <td>7102</td>
+                        <td>м</td>
+                        <td>Настольные игры</td>
+                        <td>18</td>
+                        <td>очно</td>
+                        <td>Бизнес-аналитик</td>
+                    </tr>
+                </tbody>
+            </table>        
+        </div>
+        <div class="form_content">
+            <form>
+                <label for="id">Идентификатор</label><br>
+                <input type="text" id="id" name="id" required class="field_input"><br>
+                <label for="name">ФИО</label><br>
+                <input type="text" id="name" name="name" class="field_input"><br>
+                <label for="number_gradebook">Номер зачетной книжки</label><br>
+                <input type="text" id="number_gradebook" name="number" class="field_input"><br>
+                <label for="gender">Пол</label><br>
+                <input type="text" id="gender" name="gender" class="field_input"><br>
+                <label for="age">Возраст</label><br>
+                <input type="text" id="age" name="age" class="field_input"><br>
+                <label for="form_grade">Форма обучения</label><br>
+                <input type="text" id="form_grade" name="form_grade" class="field_input"><br>
+                <label for="name_specialization">Название специализации</label><br>
+                <input type="text" id="name_specialization" name="name_specialization" class="field_input"><br>
+                <input type="submit" value="Отправить" class="form_content_submit"><br>
+            </form>
+        </div>  
+    </body>
+</html>
